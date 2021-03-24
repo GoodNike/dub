@@ -272,7 +272,7 @@ struct BuildSettingsTemplate {
 
  		// collect source files
 		dst.addSourceFiles(collectFiles(sourcePaths, "*.d"));
-		auto sourceFiles = dst.sourceFiles.sort();
+		auto sourceFiles = dst.sourceFiles;
 
  		// collect import files and remove sources
 		import std.algorithm : copy, setDifference;
